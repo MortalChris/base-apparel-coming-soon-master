@@ -1,10 +1,44 @@
 *{
     margin: 0;
 }
+body .article{
+    
+}
+.body-wrapper{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "aside"
+    "article"
+    "article"
+    "input";
+}
+/*Where the icon is*/
+#header{
+   padding-left: 5%;
+   padding: 7%;
+}
+#header svg{
+ 
+}
+/*Where the giant side picture is*/
+#aside{
+    height: 50%;
+    width: 50% 
+}
+/*Where h1 and paragrph text are*/
+.article h1{
+
+}
+.article p{
+    
+}
+/*Where the email and button are*/
+#input{
+
+}
+/*footer*/
 attribution a{
     font-size: 11px; text-align: center; 
     color: hsl(228, 45%, 44%); 
-}
-body{
-    display: grid;
 }
