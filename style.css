@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+}
+attribution a{
+    font-size: 11px; text-align: center; 
+    color: hsl(228, 45%, 44%); 
+}
+body{
+    display: grid;
+}
