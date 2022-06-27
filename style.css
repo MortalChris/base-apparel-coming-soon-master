@@ -1,8 +1,9 @@
 *{
+    overflow-y: hidden;
     margin: 0;
-}
-body .article{
-    
+    padding: 0;
+    max-width: 425px;
+    box-sizing: border-box;
 }
 .body-wrapper{
     display: grid;
@@ -19,26 +20,59 @@ body .article{
    padding: 7%;
 }
 #header svg{
- 
-}
-/*Where the giant side picture is*/
-#aside{
-    height: 50%;
-    width: 50% 
-}
-/*Where h1 and paragrph text are*/
-.article h1{
 
 }
+/*Where the giant picture is*/
+#aside{
+    height: 100%;
+    width: 100% 
+}
+/*Where h1 and paragrph text are*/
+.article{
+    border: 1px solid red;
+}
+.first{
+    font-weight: 400;
+    font-size:2rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 2.3rem;
+    color: hsl(0, 36%, 70%);
+}
+.second{
+    font-weight: 400;
+    font-size:2rem;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
 .article p{
-    
+    font-weight: 300;
+    margin-top: 1rem;
+    font-size: 16px;
+    color:hsl(0, 36%, 70%);
 }
 /*Where the email and button are*/
 #input{
-
+    place-self: center;
+    margin-top:1.2rem;
 }
 /*footer*/
 attribution a{
     font-size: 11px; text-align: center; 
     color: hsl(228, 45%, 44%); 
 }
+
+@media (min-width: 426px) {
+    .body-wrapper{
+        display: grid;
+        grid-template-areas: 
+        "header header header aside aside"
+        "article article article aside aside"
+        "article article article aside aside"
+        "input input input aside aside";
+    }
+
+
+} 
