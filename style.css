@@ -1,4 +1,8 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;600&display=swap');
 *{
+    background-color: hsl(0, 0%, 100%);
     overflow-y: hidden;
     margin: 0;
     padding: 0;
@@ -28,38 +32,64 @@
     width: 100% 
 }
 /*Where h1 and paragrph text are*/
-.article{
-    border: 1px solid red;
+.article h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:2.5rem;
+    display: flex;
+    justify-content: center;
 }
 .first{
     font-weight: 400;
-    font-size:2rem;
-    display: flex;
-    justify-content: center;
+    letter-spacing: 10px;
     margin-top: 2.3rem;
     color: hsl(0, 36%, 70%);
 }
 .second{
-    font-weight: 400;
-    font-size:2rem;
-    display: flex;
-    justify-content: center;
-    color: black;
+    letter-spacing: 10px;
+    color: rgb(65, 64, 64);
+}
+.third{
+    letter-spacing: 10px;
+    color: rgb(65, 64, 64);
 }
 
 .article p{
-    font-weight: 300;
+    display: flex;
+    text-align: center;
     margin-top: 1rem;
-    font-size: 16px;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 550;
+    font-size: 15px;
+    line-height: 1.5;
     color:hsl(0, 36%, 70%);
 }
 /*Where the email and button are*/
 #input{
-    place-self: center;
     margin-top:1.2rem;
+    place-self: center;
+}
+.btn{
+    padding: 1rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: hsl(0, 74%, 74%);
+    color: white;
+}
+.texts{
+    margin-top:1.2rem;
+    padding: 1rem;
+    padding-left: 1rem;
+    padding-right: 8rem;
+    color: hsl(0, 36%, 70%);
+    border: 1px solid hsl(0, 36%, 70%);
+    border-radius: 2rem;
+    font-family: Josefin Sans;
 }
 /*footer*/
 attribution a{
+    font-family: Josefin Sans;
     font-size: 11px; text-align: center; 
     color: hsl(228, 45%, 44%); 
 }
