@@ -6,7 +6,7 @@
     overflow-y: hidden;
     margin: 0;
     padding: 0;
-    max-width: 425px;
+    max-width: 620px;
     box-sizing: border-box;
 }
 .body-wrapper{
@@ -28,6 +28,9 @@
 }
 /*Where the giant picture is*/
 #aside{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100%;
     width: 100% 
 }
@@ -114,15 +117,17 @@ footer{
     color: hsl(0, 13%, 56%); 
 }
 
-@media (min-width: 426px) {
+@media only screen and (min-width: 620px) {
     .body-wrapper{
         display: grid;
         grid-template-areas: 
         "header header header aside aside"
         "article article article aside aside"
         "article article article aside aside"
-        "input input input aside aside";
+        "input input input input input";
     }
-
+    #aside{
+        background-image: url("images\hero-desktop.jpg");
+    }
 
 } 
