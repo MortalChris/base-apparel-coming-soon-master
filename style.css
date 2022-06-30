@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;600&display=swap');
 *{
-    background-color: hsl(0, 0%, 100%);
+    background-color: hsl(336, 45%, 98%);
     overflow-y: hidden;
     margin: 0;
     padding: 0;
@@ -34,25 +34,25 @@
 /*Where h1 and paragrph text are*/
 .article h1{
     font-family: 'Josefin Sans', sans-serif;
-    font-size:2.5rem;
+    font-size:2.8rem;
     display: flex;
     justify-content: center;
 }
 .first{
     font-weight: 400;
-    letter-spacing: 10px;
-    margin-top: 2.3rem;
+    letter-spacing: 12px;
+    margin-top: 4rem;
     color: hsl(0, 36%, 70%);
 }
 .second{
-    letter-spacing: 10px;
+    letter-spacing: 12px;
     color: rgb(65, 64, 64);
 }
 .third{
-    letter-spacing: 10px;
+    letter-spacing: 12px;
     color: rgb(65, 64, 64);
 }
-
+/*Paragrpah*/
 .article p{
     display: flex;
     text-align: center;
@@ -70,12 +70,21 @@
     margin-top:1.2rem;
     place-self: center;
 }
+
 .btn{
+    cursor: pointer;
+    display: inline-block;
+    margin-left: -44px;
     padding: 1rem;
+    padding-top: .92rem;
+    padding-bottom: 1.1rem;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
     border: none;
     border-radius: 2rem;
     background-color: hsl(0, 74%, 74%);
     color: white;
+ 
 }
 .texts{
     margin-top:1.2rem;
@@ -87,11 +96,22 @@
     border-radius: 2rem;
     font-family: Josefin Sans;
 }
+::placeholder {
+    color:hsl(0, 36%, 70%);
+    font-weight: 20;
+    font-size: 15px;
+    /*Placeholder text input value "Email Address"*/
+}
 /*footer*/
-attribution a{
+footer{
+    margin-top: 10rem;
+    font-size: 15px; 
+    color: hsl(0, 36%, 70%);
+}
+.attribution a{
     font-family: Josefin Sans;
-    font-size: 11px; text-align: center; 
-    color: hsl(228, 45%, 44%); 
+    text-align: center; 
+    color: hsl(0, 13%, 56%); 
 }
 
 @media (min-width: 426px) {
