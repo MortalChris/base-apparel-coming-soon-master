@@ -14,12 +14,19 @@
     </section>
 
     <section id="aside">
+      <picture> 
+          <source media="(max-width:425px)" srcset="images/hero-mobile.jpg">
+          <source media="(min-width:625px)" srcset="images/hero-desktop.jpg">
+          <img src="images/hero-mobile.jpg" alt="Small" style="width:auto;">
+      </picture> 
+       <!--
       <img src="images/hero-mobile.jpg"
       srcset="images/hero-mobile.jpg 320w, 
               images/hero-desktop.jpg 320w"
-      sizes="(min-width: 425px) 50vh"
+      sizes="(min-width: 425px) 50vh, 100vh"
       alt="Pic of girl">
       </img>
+      --->
     </section>
 
     <section class="article">
