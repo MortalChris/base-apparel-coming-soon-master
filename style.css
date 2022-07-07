@@ -2,11 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;600&display=swap');
 *{
-    background-color: hsl(336, 45%, 98%);
-    overflow-y: hidden;
+    background-image: url('\images\bg-pattern-desktop.svg');
+    background-size: cover;
+    /*overflow-y: hidden;*/
+    overflow-x:hidden;
+    overflow-y:hidden;
     margin: 0;
     padding: 0;
-   /* max-width: 620px;*/
     box-sizing: border-box;
 }
 .body-wrapper{
@@ -18,10 +20,12 @@
     "aside"
     "article"
     "article"
-    "input";
+    "input"
+    "attribution";
 }
 /*Where the icon is*/
 #header{
+   grid-area: header;
    padding-left: 5%;
    padding: 7%;
 }
@@ -33,16 +37,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    grid-area: aside;
     height: 100%;
     width: 100% 
 }
+.big-picture{
+    
+}
 /*Where h1 and paragrph text are*/
+.article{
+    
+}
 .article h1{
     font-family: 'Josefin Sans', sans-serif;
     font-size:2.8rem;
     display: flex;
     justify-content: center;
 }
+/* Headings Seperated into 3 lines */
 .first{
     font-weight: 400;
     letter-spacing: 12px;
@@ -72,7 +84,8 @@
 }
 /*Where the email and button are*/
 #input{
-    margin-top:1.2rem;
+    grid-area: input;
+    margin-top: 1.2rem;
     place-self: center;
 }
 
@@ -101,7 +114,7 @@
     outline-width: 0;
     border-radius: 2rem;
     font-family: Josefin Sans;
-}
+}   
 ::placeholder {
     color:hsl(0, 36%, 70%);
     font-weight: 20;
@@ -114,25 +127,60 @@ footer{
     font-size: 15px; 
     color: hsl(0, 36%, 70%);
 }
+.attribution{
+    grid-area: attribution;
+}
 .attribution a{
     font-family: Josefin Sans;
     text-align: center; 
     color: hsl(0, 13%, 56%); 
 }
-
-@media only screen and (min-width: 620px) {
+@media only screen and (min-device-width: 620px){
+    *{
+     
+    }
     .body-wrapper{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 60% 40%;
         grid-template-areas: 
-        "header header header aside aside"
-        "article article article aside aside"
-        "article article article aside aside"
-        "input input input input input";
+        "header aside"
+        "article aside"
+        "article aside"
+        "input aside"
+        "attribution aside";
     }
     #aside{
-        background-image: url("images\hero-desktop.jpg");
+        /*background-image: url("images\hero-desktop.jpg");*/
     }
-
-} 
+    .article h1{
+        letter-spacing: 1.3rem;
+        font-size:5rem;
+        display: flex;
+        justify-content: left;
+        padding-left: 10rem;
+    }
+    .article p{
+        display: flex;
+        justify-content: left;
+        text-align: left;
+        font-size: 18px;
+        padding-left: 8rem;
+        margin-right: 16rem;
+        line-height: 2rem;
+    }
+    #input{
+        margin-left: 9.6rem;
+        place-self: auto;
+    }
+    .btn{
+        padding-top: .95rem;
+        padding-bottom: 1.07rem;
+        padding-right: 2.5rem;
+        padding-left: 2.4rem;
+        margin-left: -85px;
+    }
+    .texts{
+        padding-right: 20rem;
+        
+    }
+} s
