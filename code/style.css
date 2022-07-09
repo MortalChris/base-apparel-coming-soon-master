@@ -140,12 +140,7 @@ footer{
 
 
 
-
-
-@media only screen and (min-device-width: 768px){
-    *{
-     
-    }
+@media only screen and (min-device-width: 769px){
     .body-wrapper{
         display: grid;
         grid-template-columns: 60% 40%;
@@ -166,9 +161,6 @@ footer{
         object-fit: cover;
         width: 730px;
         height: 100vh;
-    }
-    #header{
-        
     }
     .article h1{
         letter-spacing: 1.3rem;
@@ -206,3 +198,88 @@ footer{
         justify-content: center;
     }
 } 
+
+/* Change padding on elements to adapt to screen sizes*/
+@media (min-device-width: 768px){
+.texts{
+        padding-right: 12rem;
+    }
+.article h1{
+    padding-left: 4.5rem;
+    font-size: 4.6rem;
+    }
+.article p{
+    padding-left: 3.6rem;   
+    margin-right: 2rem;
+    } 
+#input{
+    margin-top: 0rem;
+    margin-left: 5rem;
+    }
+}
+@media (min-device-width: 771px){
+    .article h1{
+        font-size: 4rem;
+    }
+}
+@media (min-device-width: 1239px){
+.body-wrapper{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: 
+    "header aside"
+    "article aside"
+    "article aside"
+    "input aside"
+    "attribution aside";
+}
+#aside{
+    /*background-image: url("images\hero-desktop.jpg");*/
+    grid-area: aside;
+    height: 100%;
+
+}
+img{
+    object-fit: cover;
+    width: 730px;
+    height: 100vh;
+}
+.article h1{
+    letter-spacing: 1.3rem;
+    font-size:5rem;
+    display: flex;
+    justify-content: left;
+    padding-left: 9rem;
+}
+.article p{
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    font-size: 18px;
+    padding-left: 8rem;
+    padding-right: 12rem;
+    margin-right: 16rem;
+    line-height: 2rem;
+}
+#input{
+    margin-left: 9.6rem;
+    place-self: auto;
+}
+.btn{
+    padding-top: .95rem;
+    padding-bottom: 1.07rem;
+    padding-right: 2.5rem;
+    padding-left: 2.4rem;
+    margin-left: -85px;
+}
+.texts{
+    padding-right: 20rem;
+    
+}
+footer{
+    display: flex;
+    justify-content: center;
+    justify-content: bottom;
+}
+}
+
