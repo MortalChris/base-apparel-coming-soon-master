@@ -39,11 +39,11 @@
     justify-content: center;
     grid-area: aside;
     height: 100%;
-    width: 100% 
+    color:linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    background-size: inherit;
+    background-size: cover;
 }
-.big-picture{
-    
-}
+
 /*Where h1 and paragrph text are*/
 .article{
     
@@ -124,17 +124,24 @@
 /*footer*/
 footer{
     margin-top: 8rem;
+    margin-bottom: 2rem;
     font-size: 15px; 
     color: hsl(0, 36%, 70%);
+    grid-area: attribution;
 }
 .attribution{
-    grid-area: attribution;
+   
 }
 .attribution a{
     font-family: Josefin Sans;
     text-align: center; 
     color: hsl(0, 13%, 56%); 
 }
+
+
+
+
+
 @media only screen and (min-device-width: 768px){
     *{
      
@@ -151,6 +158,17 @@ footer{
     }
     #aside{
         /*background-image: url("images\hero-desktop.jpg");*/
+        grid-area: aside;
+        height: 100%;
+
+    }
+    img{
+        object-fit: cover;
+        width: 730px;
+        height: 100vh;
+    }
+    #header{
+        
     }
     .article h1{
         letter-spacing: 1.3rem;
@@ -183,4 +201,8 @@ footer{
         padding-right: 20rem;
         
     }
-} s
+    footer{
+        display: flex;
+        justify-content: center;
+    }
+} 
