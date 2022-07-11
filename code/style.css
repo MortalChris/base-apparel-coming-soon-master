@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;600&display=swap');
 *{
-    background-image: url('\images\bg-pattern-desktop.svg');
+    
     background-size: cover;
     /*overflow-y: hidden;*/
     overflow-x:hidden;
@@ -12,6 +12,7 @@
     box-sizing: border-box;
 }
 .body-wrapper{
+    background-image: url("/images/bg-pattern-desktop.svg");
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
@@ -29,9 +30,7 @@
    padding-left: 5%;
    padding: 7%;
 }
-#header svg{
 
-}
 /*Where the giant picture is*/
 #aside{
     display: flex;
@@ -45,9 +44,6 @@
 }
 
 /*Where h1 and paragrph text are*/
-.article{
-    
-}
 .article h1{
     font-family: 'Josefin Sans', sans-serif;
     font-size:2.8rem;
@@ -151,6 +147,9 @@ footer{
         "input aside"
         "attribution aside";
     }
+    #header svg{
+        margin-left: 73px;
+    }
     #aside{
         /*background-image: url("images\hero-desktop.jpg");*/
         grid-area: aside;
@@ -199,6 +198,11 @@ footer{
     }
 } 
 /* Change padding on elements to adapt to screen sizes*/
+@media (min-device-width: 1024px){
+    #header svg{
+        margin-left: 2rem;
+    }
+}
 @media (min-device-width: 1239px){
 .body-wrapper{
     display: grid;
@@ -209,6 +213,9 @@ footer{
     "article aside"
     "input aside"
     "attribution aside";
+}
+#header svg{
+    margin-left: 5.5rem;
 }
 #aside{
     /*background-image: url("images\hero-desktop.jpg");*/
@@ -260,6 +267,9 @@ footer{
 }
 }
 @media (min-device-width: 1441px){
+    #header svg{
+        margin-left: 4.6rem;
+    }
     .article p{
       padding-right: 22rem;
     }
