@@ -140,7 +140,7 @@ footer{
 
 
 
-@media only screen and (min-device-width: 769px){
+@media only screen and (min-device-width: 770px){
     .body-wrapper{
         display: grid;
         grid-template-columns: 60% 40%;
@@ -200,8 +200,8 @@ footer{
 } 
 
 /* Change padding on elements to adapt to screen sizes*/
-@media (min-device-width: 768px){
-.texts{
+@media (min-device-width: 770px){
+    .texts{
         padding-right: 12rem;
     }
 .article h1{
@@ -257,8 +257,8 @@ img{
     text-align: left;
     font-size: 18px;
     padding-left: 8rem;
-    padding-right: 12rem;
-    margin-right: 16rem;
+    padding-right: 8rem;
+    margin-right: 0rem;
     line-height: 2rem;
 }
 #input{
@@ -282,4 +282,8 @@ footer{
     justify-content: bottom;
 }
 }
-
+@media (min-device-width: 1441px){
+    .article p{
+      padding-right: 22rem;
+    }
+}
