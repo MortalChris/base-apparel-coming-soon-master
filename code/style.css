@@ -84,7 +84,22 @@
     margin-top: 1.2rem;
     place-self: center;
 }
-
+#form-control{
+    position: relative;
+}
+#form-control .error{
+    position: absolute;
+    top: 45%;
+    right: 25%;
+    visibility: hidden;
+}
+#form-control .errorMsg{
+    margin-top: .6rem;
+    margin-left: 1rem;
+    display: block;
+    color: rgb(226, 17, 17);
+    visibility: hidden;
+}
 .btn{
     cursor: pointer;
     display: inline-block;
@@ -124,9 +139,6 @@ footer{
     font-size: 15px; 
     color: hsl(0, 36%, 70%);
     grid-area: attribution;
-}
-.attribution{
-   
 }
 .attribution a{
     font-family: Josefin Sans;
@@ -181,7 +193,14 @@ footer{
         margin-top: 0rem;
         margin-left: 5rem;
         place-self: auto;
+        /*position: relative;*/
     }
+    
+   /* .error{
+        position: absolute;
+        top: 32%;
+        right: 27%;
+    }*/
     .btn{
         padding-top: .95rem;
         padding-bottom: 1.07rem;
@@ -201,6 +220,9 @@ footer{
 @media (min-device-width: 1024px){
     #header svg{
         margin-left: 2rem;
+    }
+    .error{
+       margin-right: 160px;
     }
 }
 @media (min-device-width: 1239px){
@@ -272,5 +294,12 @@ footer{
     }
     .article p{
       padding-right: 22rem;
+    }
+    #input{
+        margin-left: 12rem;
+        place-self: auto;
+    }
+    .error{
+        margin-right: 19.5rem;
     }
 }
