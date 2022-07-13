@@ -87,17 +87,31 @@
 #form-control{
     position: relative;
 }
+
+
+.form-control input:focus {
+    /* Form error stuff */
+	outline: 0;
+	border-color: #777;
+}
+#form-control.success input{ 
+    border-color: #2ecc71;
+}
+.form-control.error input {
+	border-color: #e74c3c;
+}
+
 #form-control .error{
     position: absolute;
     top: 45%;
     right: 25%;
     visibility: hidden;
 }
-#form-control .errorMsg{
+#form-control #errorMsg{
     margin-top: .6rem;
     margin-left: 1rem;
     display: block;
-    color: rgb(226, 17, 17);
+    color: #e74c3c;
     visibility: hidden;
 }
 .btn{
