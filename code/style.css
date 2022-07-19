@@ -2,9 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;600&display=swap');
 *{
-    
     background-size: cover;
-    /*overflow-y: hidden;*/
     overflow-x:hidden;
     overflow-y:hidden;
     margin: 0;
@@ -89,8 +87,29 @@
 }
 
 
+
+/* Only hide error when form is valid */
+form:not(:invalid)>#error-message {display: none}
+/* Only hide image when it has no source */
+#error-message>img:not([src]) {display: none}
+
+/* Error styles */
+#error-message {
+  margin-block-start: .2rem;
+  border: 1px solid black;
+  padding: .4rem .6rem;
+  width: fit-content;
+  background-color: lightpink;
+}
+#error-message>img {
+    position: absolute;
+    top: 45%;
+    right: 25%;
+    visibility: hidden;
+}
+/*
 .form-control input:focus {
-    /* Form error stuff */
+    /* Form error stuff *//*
 	outline: 0;
 	border-color: #777;
 }
@@ -100,13 +119,19 @@
 .form-control.error input {
 	border-color: #e74c3c;
 }
+*/
 
+
+
+
+/* svg image
 #form-control .error{
     position: absolute;
     top: 45%;
     right: 25%;
     visibility: hidden;
 }
+*/
 #form-control #errorMsg{
     margin-top: .6rem;
     margin-left: 1rem;
@@ -161,7 +186,7 @@ footer{
 }
 
 
-
+/* Media queries at different screen sizes */
 @media only screen and (min-device-width: 770px){
     .body-wrapper{
         display: grid;
